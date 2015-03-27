@@ -31,8 +31,8 @@ public class HelloServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		//한글처리
-		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		request.setCharacterEncoding("UTF-8"); //request를 UTF-8 방식으로 설정해줌 
+		response.setContentType("text/html; charset=UTF-8");//response에 설정해줌, html로 내려받음, get방식으로 할때는 server.xml에 URLEncoding 해줌
 				
 		PrintWriter out = response.getWriter();
 		

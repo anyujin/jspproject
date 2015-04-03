@@ -59,6 +59,8 @@ public class TestServlet extends HttpServlet {
 		}
 		
 		out.print(text);
+		
+		out.close();
 	}
 
 	/**

@@ -4,7 +4,7 @@ import java.sql.*;
 
 // VO(Value Object) = DTO(Date Transfer Object) = Java Beans
 public class Member {
-	private String id;
+	private String id; 			//private - 같은 class안에서만 접근 
 	private String pass;
 	private String name;
 	private int age;
@@ -12,7 +12,7 @@ public class Member {
 	private String addr;
 	private Date regDate;
 	
-	public String getId() {
+	public String getId() {		//메소드를 이용하여 접근 - 정보은닉 
 		return id;
 	}
 	public void setId(String id) {

@@ -12,7 +12,7 @@ create table member
 	password	varchar2(10),
 	name		varchar2(20),
 	age			number,
-	gender		char(1), -- 고정길이, 속도가 빠름
+	gender		char(6), -- 고정길이, 속도가 빠름
 	addr		varchar2(100),
 	regdate		date				default sysdate -- 날짜형		오늘 날짜로 자동으로 들어가게 하는 것  
 )

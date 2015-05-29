@@ -17,6 +17,7 @@ insert into board
 values(board_seq.nextval, 'yujin', 'hi', 'hello', default, default, 'j')
 
 select * from board
+order by num desc
 
 delete board
 where title = 'hi'

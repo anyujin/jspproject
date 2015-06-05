@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import board.action.Action;
 import board.action.BoardListAction;
+import board.action.BoardViewAction;
 import board.action.BoardWriteAction;
 import board.action.BoardWriteFormAction;
 
@@ -73,6 +74,12 @@ public class BoardController extends HttpServlet {
 		//리스트
 		else if(command.equals("/list.board")){
 			Action action = new BoardListAction();
+			action.execute(request, response);
+		}
+		
+		//상세보기
+		else if(command.equals("/view.board")){
+			Action action = new BoardViewAction();
 			action.execute(request, response);
 		}
 	}

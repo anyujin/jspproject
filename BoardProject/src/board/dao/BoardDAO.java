@@ -129,13 +129,47 @@ public class BoardDAO {
 	
 	}
 	
+	//수정하기
 	public int updateBoard(Board board){
-		
+		String sql = "update board set name=?, title=?, content=?, attachment=? where num=?";
+
+		try {
+			pstmt = con.prepareStatement(sql);
+
+			pstmt.setString(1, board.getName());
+			pstmt.setString(2, board.getTitle());
+			pstmt.setString(3, board.getContent());
+			pstmt.setString(4, board.getAttachment());
+			pstmt.setInt(5, board.getNum());
+
+			int result = pstmt.executeUpdate();
+
+			return result;
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return 0;
 	}
 	
+	//삭제
 	public int deleteBoard(int num){
-		
+		String sql = "delete board where num=?";
+
+		try {
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setInt(1, num);
+
+			int result = pstmt.executeUpdate();
+			
+			return result;
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return 0;
 	}
 }

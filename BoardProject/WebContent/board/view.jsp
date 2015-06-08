@@ -21,13 +21,13 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">게시판관리</a>
+		      <a class="navbar-brand" href="index.jsp">게시판관리</a>
 		    </div>
 		
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">글쓰기<span class="sr-only">(current)</span></a></li>
-		        <li><a href="list.jsp">리스트</a></li>
+		        <li class="active"><a href="writeForm.board">글쓰기<span class="sr-only">(current)</span></a></li>
+		        <li><a href="list.board">리스트</a></li>
 		      </ul>
 		    </div>
 		  </div>
@@ -70,8 +70,8 @@
 		    </div>
 		    <div class="form-group">
 		      <div class="col-lg-10 col-lg-offset-2">
-		        <a href="update.jsp" class="btn btn-default">수정하기</a>
-		        <a href="delete.jsp" class="btn btn-primary">삭제하기</a>
+		        <a href="updateForm.board?num=<%=board.getNum() %>" class="btn btn-default">수정하기</a>
+		        <a href="delete.board?num=<%=board.getNum() %>" class="btn btn-primary">삭제하기</a>
 		      </div>
 		    </div>
 		  </fieldset>

@@ -18,7 +18,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">게시판관리</a>
+		      <a class="navbar-brand" href="index.jsp">게시판관리</a>
 		    </div>
 		
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -52,7 +52,7 @@
 		    <div class="form-group">
 		      <label for="textArea" class="col-lg-2 control-label">내용 : </label>
 		      <div class="col-lg-10">
-		        <textarea class="form-control" rows="10" name="content" id="textArea"></textarea>
+		        <textarea class="form-control" rows="10" name="content" id="textArea" placeholder="내용을 입력하세요."></textarea>
 		      </div>
 		    </div>
 		    

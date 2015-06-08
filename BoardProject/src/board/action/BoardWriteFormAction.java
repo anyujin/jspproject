@@ -14,8 +14,7 @@ public class BoardWriteFormAction implements Action {
 		// TODO Auto-generated method stub  
 		String url = "./board/write.jsp";
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-		
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);	
 		dispatcher.forward(request, response);
 	}
 
